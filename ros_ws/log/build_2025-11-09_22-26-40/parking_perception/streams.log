@@ -1,0 +1,19 @@
+[9.969s] Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_perception': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_perception build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/install.log --single-version-externally-managed install_data
+[12.004s] running egg_info
+[12.134s] writing ../../build/parking_perception/parking_perception.egg-info/PKG-INFO
+[12.139s] writing dependency_links to ../../build/parking_perception/parking_perception.egg-info/dependency_links.txt
+[12.140s] writing requirements to ../../build/parking_perception/parking_perception.egg-info/requires.txt
+[12.140s] writing top-level names to ../../build/parking_perception/parking_perception.egg-info/top_level.txt
+[12.425s] reading manifest file '../../build/parking_perception/parking_perception.egg-info/SOURCES.txt'
+[12.429s] writing manifest file '../../build/parking_perception/parking_perception.egg-info/SOURCES.txt'
+[12.430s] running build
+[12.430s] running build_py
+[12.431s] running install
+[12.477s] running install_lib
+[12.630s] running install_data
+[12.632s] running install_egg_info
+[12.784s] removing '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/lib/python3.12/site-packages/parking_perception-0.0.0-py3.12.egg-info' (and everything under it)
+[12.784s] Copying ../../build/parking_perception/parking_perception.egg-info to /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/lib/python3.12/site-packages/parking_perception-0.0.0-py3.12.egg-info
+[12.794s] running install_scripts
+[13.753s] writing list of installed files to '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/install.log'
+[13.889s] Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_perception' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_perception build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/install.log --single-version-externally-managed install_data

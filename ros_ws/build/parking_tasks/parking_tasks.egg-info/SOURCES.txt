@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+../../build/parking_tasks/parking_tasks.egg-info/PKG-INFO
+../../build/parking_tasks/parking_tasks.egg-info/SOURCES.txt
+../../build/parking_tasks/parking_tasks.egg-info/dependency_links.txt
+../../build/parking_tasks/parking_tasks.egg-info/requires.txt
+../../build/parking_tasks/parking_tasks.egg-info/top_level.txt
+../../build/parking_tasks/parking_tasks.egg-info/zip-safe
+parking_tasks/__init__.py
+resource/parking_tasks
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

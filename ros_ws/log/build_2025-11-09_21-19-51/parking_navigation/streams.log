@@ -1,0 +1,19 @@
+[4.840s] Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_navigation build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/install.log --single-version-externally-managed install_data
+[7.278s] running egg_info
+[7.462s] writing ../../build/parking_navigation/parking_navigation.egg-info/PKG-INFO
+[7.463s] writing dependency_links to ../../build/parking_navigation/parking_navigation.egg-info/dependency_links.txt
+[7.463s] writing requirements to ../../build/parking_navigation/parking_navigation.egg-info/requires.txt
+[7.464s] writing top-level names to ../../build/parking_navigation/parking_navigation.egg-info/top_level.txt
+[8.094s] reading manifest file '../../build/parking_navigation/parking_navigation.egg-info/SOURCES.txt'
+[8.120s] writing manifest file '../../build/parking_navigation/parking_navigation.egg-info/SOURCES.txt'
+[8.123s] running build
+[8.123s] running build_py
+[8.124s] running install
+[8.202s] running install_lib
+[8.537s] running install_data
+[8.540s] running install_egg_info
+[8.821s] removing '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/python3.12/site-packages/parking_navigation-0.0.0-py3.12.egg-info' (and everything under it)
+[8.827s] Copying ../../build/parking_navigation/parking_navigation.egg-info to /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/python3.12/site-packages/parking_navigation-0.0.0-py3.12.egg-info
+[8.831s] running install_scripts
+[10.116s] writing list of installed files to '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/install.log'
+[10.256s] Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_navigation build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/install.log --single-version-externally-managed install_data

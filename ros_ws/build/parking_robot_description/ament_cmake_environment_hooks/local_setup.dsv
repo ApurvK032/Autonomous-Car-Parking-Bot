@@ -1,0 +1,2 @@
+source;share/parking_robot_description/environment/ament_prefix_path.sh
+source;share/parking_robot_description/environment/path.sh

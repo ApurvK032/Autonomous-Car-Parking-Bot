@@ -1,0 +1,638 @@
+[0.184s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.185s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7c5d7ed9c9b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c5d7ed9d9d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c5d7ed9d9d0>>)
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.250s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/apurv/Projects/Parking Bot Project/ros_ws'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_manipulation) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_manipulation) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_manipulation) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_manipulation) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_manipulation) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_manipulation) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_manipulation) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_manipulation) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_manipulation) by extension 'ros'
+[0.304s] DEBUG:colcon.colcon_core.package_identification:Package 'src/parking_manipulation' with type 'ros.ament_python' and name 'parking_manipulation'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_navigation) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_navigation) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_navigation) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_navigation) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_navigation) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_navigation) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_navigation) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_navigation) by extension 'ros'
+[0.306s] DEBUG:colcon.colcon_core.package_identification:Package 'src/parking_navigation' with type 'ros.ament_python' and name 'parking_navigation'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_perception) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_perception) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_perception) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_perception) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_perception) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_perception) by extensions ['colcon_meta']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_perception) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_perception) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_perception) by extension 'ros'
+[0.307s] DEBUG:colcon.colcon_core.package_identification:Package 'src/parking_perception' with type 'ros.ament_python' and name 'parking_perception'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_prd_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_prd_bringup) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_prd_bringup) by extension 'ignore_ament_install'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_prd_bringup) by extensions ['colcon_pkg']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_prd_bringup) by extension 'colcon_pkg'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_prd_bringup) by extensions ['colcon_meta']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_prd_bringup) by extension 'colcon_meta'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_prd_bringup) by extensions ['ros']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_prd_bringup) by extension 'ros'
+[0.309s] DEBUG:colcon.colcon_core.package_identification:Package 'src/parking_prd_bringup' with type 'ros.ament_cmake' and name 'parking_prd_bringup'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_control) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_control) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_control) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_control) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_control) by extension 'colcon_pkg'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_control) by extensions ['colcon_meta']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_control) by extension 'colcon_meta'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_control) by extensions ['ros']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_control) by extension 'ros'
+[0.310s] DEBUG:colcon.colcon_core.package_identification:Package 'src/parking_robot_control' with type 'ros.ament_cmake' and name 'parking_robot_control'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_description) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_description) by extension 'ignore_ament_install'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_description) by extensions ['colcon_pkg']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_description) by extension 'colcon_pkg'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_description) by extensions ['colcon_meta']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_description) by extension 'colcon_meta'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_description) by extensions ['ros']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_robot_description) by extension 'ros'
+[0.312s] DEBUG:colcon.colcon_core.package_identification:Package 'src/parking_robot_description' with type 'ros.ament_cmake' and name 'parking_robot_description'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_sensors) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_sensors) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_sensors) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_sensors) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_sensors) by extension 'colcon_pkg'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_sensors) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_sensors) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_sensors) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_sensors) by extension 'ros'
+[0.313s] DEBUG:colcon.colcon_core.package_identification:Package 'src/parking_sensors' with type 'ros.ament_cmake' and name 'parking_sensors'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_tasks) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_tasks) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_tasks) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_tasks) by extensions ['colcon_pkg']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_tasks) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_tasks) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_tasks) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_tasks) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_tasks) by extension 'ros'
+[0.315s] DEBUG:colcon.colcon_core.package_identification:Package 'src/parking_tasks' with type 'ros.ament_python' and name 'parking_tasks'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_utils) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_utils) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_utils) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_utils) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_utils) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_utils) by extension 'colcon_meta'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_utils) by extensions ['ros']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_utils) by extension 'ros'
+[0.316s] DEBUG:colcon.colcon_core.package_identification:Package 'src/parking_utils' with type 'ros.ament_python' and name 'parking_utils'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_world) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_world) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_world) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_world) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_world) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_world) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_world) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_world) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/parking_world) by extension 'ros'
+[0.318s] DEBUG:colcon.colcon_core.package_identification:Package 'src/parking_world' with type 'ros.ament_cmake' and name 'parking_world'
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.318s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.351s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.355s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/apurv/Projects/Parking Bot Project/ros_ws/install
+[0.355s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/apurv/car_lift_robot_ws/install
+[0.359s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 387 installed packages in /opt/ros/jazzy
+[0.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'parking_manipulation' build argument 'cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'parking_manipulation' build argument 'cmake_target' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'parking_manipulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'parking_manipulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'parking_manipulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'parking_manipulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'parking_manipulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'parking_manipulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'parking_manipulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.447s] DEBUG:colcon.colcon_core.verb:Building package 'parking_manipulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation', 'merge_install': False, 'path': '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_manipulation', 'symlink_install': False, 'test_result_base': None}
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'parking_navigation' build argument 'cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'parking_navigation' build argument 'cmake_target' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'parking_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'parking_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'parking_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'parking_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'parking_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'parking_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'parking_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.448s] DEBUG:colcon.colcon_core.verb:Building package 'parking_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation', 'merge_install': False, 'path': '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'parking_perception' build argument 'cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'parking_perception' build argument 'cmake_target' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'parking_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'parking_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'parking_perception' build argument 'cmake_clean_first' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'parking_perception' build argument 'cmake_force_configure' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'parking_perception' build argument 'ament_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'parking_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'parking_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.448s] DEBUG:colcon.colcon_core.verb:Building package 'parking_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception', 'merge_install': False, 'path': '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_perception', 'symlink_install': False, 'test_result_base': None}
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'parking_prd_bringup' build argument 'cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'parking_prd_bringup' build argument 'cmake_target' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'parking_prd_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'parking_prd_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'parking_prd_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'parking_prd_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'parking_prd_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'parking_prd_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.449s] Level 5:colcon.colcon_core.verb:set package 'parking_prd_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.449s] DEBUG:colcon.colcon_core.verb:Building package 'parking_prd_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup', 'merge_install': False, 'path': '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_prd_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_control' build argument 'cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_control' build argument 'cmake_target' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.450s] DEBUG:colcon.colcon_core.verb:Building package 'parking_robot_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control', 'merge_install': False, 'path': '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_robot_control', 'symlink_install': False, 'test_result_base': None}
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_description' build argument 'cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_description' build argument 'cmake_target' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'parking_robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.451s] DEBUG:colcon.colcon_core.verb:Building package 'parking_robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description', 'merge_install': False, 'path': '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_robot_description', 'symlink_install': False, 'test_result_base': None}
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'parking_sensors' build argument 'cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'parking_sensors' build argument 'cmake_target' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'parking_sensors' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'parking_sensors' build argument 'cmake_clean_cache' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_sensors' build argument 'cmake_clean_first' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_sensors' build argument 'cmake_force_configure' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_sensors' build argument 'ament_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_sensors' build argument 'catkin_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_sensors' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.452s] DEBUG:colcon.colcon_core.verb:Building package 'parking_sensors' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors', 'merge_install': False, 'path': '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_sensors', 'symlink_install': False, 'test_result_base': None}
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_tasks' build argument 'cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_tasks' build argument 'cmake_target' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_tasks' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_tasks' build argument 'cmake_clean_cache' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_tasks' build argument 'cmake_clean_first' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_tasks' build argument 'cmake_force_configure' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_tasks' build argument 'ament_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_tasks' build argument 'catkin_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'parking_tasks' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.452s] DEBUG:colcon.colcon_core.verb:Building package 'parking_tasks' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_tasks', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks', 'merge_install': False, 'path': '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_tasks', 'symlink_install': False, 'test_result_base': None}
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'parking_utils' build argument 'cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'parking_utils' build argument 'cmake_target' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'parking_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'parking_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'parking_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'parking_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'parking_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'parking_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'parking_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.454s] DEBUG:colcon.colcon_core.verb:Building package 'parking_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils', 'merge_install': False, 'path': '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_utils', 'symlink_install': False, 'test_result_base': None}
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'parking_world' build argument 'cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'parking_world' build argument 'cmake_target' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'parking_world' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'parking_world' build argument 'cmake_clean_cache' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'parking_world' build argument 'cmake_clean_first' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'parking_world' build argument 'cmake_force_configure' from command line to 'False'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'parking_world' build argument 'ament_cmake_args' from command line to 'None'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'parking_world' build argument 'catkin_cmake_args' from command line to 'None'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'parking_world' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.455s] DEBUG:colcon.colcon_core.verb:Building package 'parking_world' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_world', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world', 'merge_install': False, 'path': '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_world', 'symlink_install': False, 'test_result_base': None}
+[0.455s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.456s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.457s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_manipulation' with build type 'ament_python'
+[0.457s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_manipulation', 'ament_prefix_path')
+[0.462s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation/hook/ament_prefix_path.ps1'
+[0.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation/hook/ament_prefix_path.dsv'
+[0.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation/hook/ament_prefix_path.sh'
+[0.467s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.467s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.476s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_navigation' with build type 'ament_python'
+[0.476s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_navigation', 'ament_prefix_path')
+[0.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/parking_navigation/hook/ament_prefix_path.ps1'
+[0.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/parking_navigation/hook/ament_prefix_path.dsv'
+[0.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/parking_navigation/hook/ament_prefix_path.sh'
+[0.481s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.481s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.493s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_perception' with build type 'ament_python'
+[0.493s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_perception', 'ament_prefix_path')
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/parking_perception/hook/ament_prefix_path.ps1'
+[0.495s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/parking_perception/hook/ament_prefix_path.dsv'
+[0.496s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/parking_perception/hook/ament_prefix_path.sh'
+[0.497s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.497s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.509s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_prd_bringup' with build type 'ament_cmake'
+[0.510s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_prd_bringup'
+[0.511s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.511s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.524s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_robot_control' with build type 'ament_cmake'
+[0.525s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_robot_control'
+[0.525s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.526s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.539s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_robot_description' with build type 'ament_cmake'
+[0.540s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_robot_description'
+[0.540s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.540s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.553s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_sensors' with build type 'ament_cmake'
+[0.554s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_sensors'
+[0.554s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.554s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.568s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_tasks' with build type 'ament_python'
+[0.568s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_tasks', 'ament_prefix_path')
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/parking_tasks/hook/ament_prefix_path.ps1'
+[0.570s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/parking_tasks/hook/ament_prefix_path.dsv'
+[0.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/parking_tasks/hook/ament_prefix_path.sh'
+[0.572s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.573s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.094s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_manipulation'
+[1.095s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.095s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.565s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_navigation'
+[1.565s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.565s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.054s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_perception'
+[2.055s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.055s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.073s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup -- -j8 -l8
+[2.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control -- -j8 -l8
+[2.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_description -- -j8 -l8
+[2.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors -- -j8 -l8
+[2.612s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_tasks'
+[2.613s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.613s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.639s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control -- -j8 -l8
+[2.672s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control
+[2.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors -- -j8 -l8
+[2.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors
+[2.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_description -- -j8 -l8
+[2.691s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_description
+[2.765s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_robot_description)
+[2.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_description
+[2.781s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description' for CMake module files
+[2.782s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description' for CMake config files
+[2.788s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_robot_description', 'cmake_prefix_path')
+[2.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/hook/cmake_prefix_path.ps1'
+[2.790s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/hook/cmake_prefix_path.dsv'
+[2.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/hook/cmake_prefix_path.sh'
+[2.795s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/bin'
+[2.795s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/lib/pkgconfig/parking_robot_description.pc'
+[2.796s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/lib/python3.12/site-packages'
+[2.798s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/bin'
+[2.798s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/package.ps1'
+[2.800s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/package.dsv'
+[2.802s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/package.sh'
+[2.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/package.bash'
+[2.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/package.zsh'
+[2.808s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/colcon-core/packages/parking_robot_description)
+[2.809s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_robot_description)
+[2.810s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description' for CMake module files
+[2.811s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description' for CMake config files
+[2.812s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_robot_description', 'cmake_prefix_path')
+[2.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/hook/cmake_prefix_path.ps1'
+[2.814s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/hook/cmake_prefix_path.dsv'
+[2.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/hook/cmake_prefix_path.sh'
+[2.816s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/bin'
+[2.816s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/lib/pkgconfig/parking_robot_description.pc'
+[2.817s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/lib/python3.12/site-packages'
+[2.818s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/bin'
+[2.819s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/package.ps1'
+[2.820s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/package.dsv'
+[2.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/package.sh'
+[2.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/package.bash'
+[2.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/parking_robot_description/package.zsh'
+[2.824s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_description/share/colcon-core/packages/parking_robot_description)
+[2.827s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_utils' with build type 'ament_python'
+[2.828s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_utils', 'ament_prefix_path')
+[2.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/share/parking_utils/hook/ament_prefix_path.ps1'
+[2.829s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/share/parking_utils/hook/ament_prefix_path.dsv'
+[2.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/share/parking_utils/hook/ament_prefix_path.sh'
+[2.832s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.832s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.852s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_sensors)
+[2.855s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors' for CMake module files
+[2.853s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors
+[2.857s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors' for CMake config files
+[2.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_sensors', 'cmake_prefix_path')
+[2.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/hook/cmake_prefix_path.ps1'
+[2.861s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/hook/cmake_prefix_path.dsv'
+[2.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/hook/cmake_prefix_path.sh'
+[2.865s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/bin'
+[2.865s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/lib/pkgconfig/parking_sensors.pc'
+[2.866s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/lib/python3.12/site-packages'
+[2.868s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/bin'
+[2.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/package.ps1'
+[2.870s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/package.dsv'
+[2.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/package.sh'
+[2.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/package.bash'
+[2.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/package.zsh'
+[2.877s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/colcon-core/packages/parking_sensors)
+[2.878s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_sensors)
+[2.879s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors' for CMake module files
+[2.882s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors' for CMake config files
+[2.883s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_sensors', 'cmake_prefix_path')
+[2.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/hook/cmake_prefix_path.ps1'
+[2.885s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/hook/cmake_prefix_path.dsv'
+[2.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/hook/cmake_prefix_path.sh'
+[2.888s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/bin'
+[2.889s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/lib/pkgconfig/parking_sensors.pc'
+[2.890s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/lib/python3.12/site-packages'
+[2.891s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/bin'
+[2.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/package.ps1'
+[2.894s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/package.dsv'
+[2.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/package.sh'
+[2.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/package.bash'
+[2.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/package.zsh'
+[2.901s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/colcon-core/packages/parking_sensors)
+[2.902s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_robot_control)
+[2.903s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control' for CMake module files
+[2.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control
+[2.908s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control' for CMake config files
+[2.909s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_robot_control', 'cmake_prefix_path')
+[2.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/hook/cmake_prefix_path.ps1'
+[2.910s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/hook/cmake_prefix_path.dsv'
+[2.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/hook/cmake_prefix_path.sh'
+[2.914s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/bin'
+[2.915s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/lib/pkgconfig/parking_robot_control.pc'
+[2.916s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/lib/python3.12/site-packages'
+[2.918s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/bin'
+[2.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.ps1'
+[2.920s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.dsv'
+[2.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.sh'
+[2.924s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.bash'
+[2.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.zsh'
+[2.928s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/colcon-core/packages/parking_robot_control)
+[2.929s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_robot_control)
+[2.930s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control' for CMake module files
+[2.932s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control' for CMake config files
+[2.933s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_robot_control', 'cmake_prefix_path')
+[2.933s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/hook/cmake_prefix_path.ps1'
+[2.935s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/hook/cmake_prefix_path.dsv'
+[2.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/hook/cmake_prefix_path.sh'
+[2.938s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/bin'
+[2.938s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/lib/pkgconfig/parking_robot_control.pc'
+[2.939s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/lib/python3.12/site-packages'
+[2.941s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/bin'
+[2.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.ps1'
+[2.945s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.dsv'
+[2.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.sh'
+[2.948s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.bash'
+[2.949s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.zsh'
+[2.950s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/colcon-core/packages/parking_robot_control)
+[2.951s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_world' with build type 'ament_cmake'
+[2.951s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_world'
+[2.952s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.952s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.614s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_utils'
+[3.615s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.615s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.628s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_world -- -j8 -l8
+[3.630s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup -- -j8 -l8
+[3.637s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup
+[3.708s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_prd_bringup)
+[3.709s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup' for CMake module files
+[3.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup
+[3.712s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup' for CMake config files
+[3.712s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_prd_bringup', 'cmake_prefix_path')
+[3.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/hook/cmake_prefix_path.ps1'
+[3.714s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/hook/cmake_prefix_path.dsv'
+[3.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/hook/cmake_prefix_path.sh'
+[3.716s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/bin'
+[3.716s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/lib/pkgconfig/parking_prd_bringup.pc'
+[3.717s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/lib/python3.12/site-packages'
+[3.718s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/bin'
+[3.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/package.ps1'
+[3.720s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/package.dsv'
+[3.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/package.sh'
+[3.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/package.bash'
+[3.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/package.zsh'
+[3.724s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/colcon-core/packages/parking_prd_bringup)
+[3.725s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_prd_bringup)
+[3.725s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup' for CMake module files
+[3.727s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup' for CMake config files
+[3.727s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_prd_bringup', 'cmake_prefix_path')
+[3.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/hook/cmake_prefix_path.ps1'
+[3.729s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/hook/cmake_prefix_path.dsv'
+[3.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/hook/cmake_prefix_path.sh'
+[3.731s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/bin'
+[3.731s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/lib/pkgconfig/parking_prd_bringup.pc'
+[3.732s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/lib/python3.12/site-packages'
+[3.733s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/bin'
+[3.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/package.ps1'
+[3.735s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/package.dsv'
+[3.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/package.sh'
+[3.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/package.bash'
+[3.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/package.zsh'
+[3.740s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/colcon-core/packages/parking_prd_bringup)
+[3.744s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_world -- -j8 -l8
+[3.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_world
+[3.796s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_world)
+[3.796s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world' for CMake module files
+[3.798s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_world
+[3.799s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world' for CMake config files
+[3.799s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_world', 'cmake_prefix_path')
+[3.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/hook/cmake_prefix_path.ps1'
+[3.801s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/hook/cmake_prefix_path.dsv'
+[3.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/hook/cmake_prefix_path.sh'
+[3.804s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/bin'
+[3.804s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/lib/pkgconfig/parking_world.pc'
+[3.805s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/lib/python3.12/site-packages'
+[3.807s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/bin'
+[3.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/package.ps1'
+[3.809s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/package.dsv'
+[3.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/package.sh'
+[3.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/package.bash'
+[3.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/package.zsh'
+[3.812s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/colcon-core/packages/parking_world)
+[3.813s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_world)
+[3.814s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world' for CMake module files
+[3.815s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world' for CMake config files
+[3.816s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_world', 'cmake_prefix_path')
+[3.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/hook/cmake_prefix_path.ps1'
+[3.817s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/hook/cmake_prefix_path.dsv'
+[3.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/hook/cmake_prefix_path.sh'
+[3.820s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/bin'
+[3.820s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/lib/pkgconfig/parking_world.pc'
+[3.820s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/lib/python3.12/site-packages'
+[3.821s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/bin'
+[3.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/package.ps1'
+[3.823s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/package.dsv'
+[3.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/package.sh'
+[3.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/package.bash'
+[3.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/parking_world/package.zsh'
+[3.827s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_world/share/colcon-core/packages/parking_world)
+[4.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_manipulation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_manipulation build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/install.log --single-version-externally-managed install_data
+[4.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_perception': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_perception build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/install.log --single-version-externally-managed install_data
+[4.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_navigation build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/install.log --single-version-externally-managed install_data
+[4.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_tasks': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_tasks/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_tasks build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_tasks/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_tasks/install.log --single-version-externally-managed install_data
+[5.062s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_utils': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_utils build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/install.log --single-version-externally-managed install_data
+[5.415s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation' for CMake module files
+[5.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_manipulation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_manipulation build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/install.log --single-version-externally-managed install_data
+[5.417s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation' for CMake config files
+[5.419s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib'
+[5.419s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/bin'
+[5.419s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/pkgconfig/parking_manipulation.pc'
+[5.420s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages'
+[5.420s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_manipulation', 'pythonpath')
+[5.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation/hook/pythonpath.ps1'
+[5.422s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation/hook/pythonpath.dsv'
+[5.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation/hook/pythonpath.sh'
+[5.427s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/bin'
+[5.427s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_manipulation)
+[5.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation/package.ps1'
+[5.429s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation/package.dsv'
+[5.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation/package.sh'
+[5.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation/package.bash'
+[5.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation/package.zsh'
+[5.432s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/colcon-core/packages/parking_manipulation)
+[5.434s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception' for CMake module files
+[5.435s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception' for CMake config files
+[5.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_perception' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_perception build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/install.log --single-version-externally-managed install_data
+[5.437s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/lib'
+[5.437s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/bin'
+[5.437s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/lib/pkgconfig/parking_perception.pc'
+[5.438s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/lib/python3.12/site-packages'
+[5.438s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_perception', 'pythonpath')
+[5.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/parking_perception/hook/pythonpath.ps1'
+[5.439s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/parking_perception/hook/pythonpath.dsv'
+[5.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/parking_perception/hook/pythonpath.sh'
+[5.441s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/bin'
+[5.441s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_perception)
+[5.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/parking_perception/package.ps1'
+[5.443s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/parking_perception/package.dsv'
+[5.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/parking_perception/package.sh'
+[5.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/parking_perception/package.bash'
+[5.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/parking_perception/package.zsh'
+[5.447s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/colcon-core/packages/parking_perception)
+[5.691s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation' for CMake module files
+[5.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_navigation build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/install.log --single-version-externally-managed install_data
+[5.692s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation' for CMake config files
+[5.693s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib'
+[5.693s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/bin'
+[5.693s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/pkgconfig/parking_navigation.pc'
+[5.694s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/python3.12/site-packages'
+[5.694s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_navigation', 'pythonpath')
+[5.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/parking_navigation/hook/pythonpath.ps1'
+[5.695s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/parking_navigation/hook/pythonpath.dsv'
+[5.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/parking_navigation/hook/pythonpath.sh'
+[5.697s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/bin'
+[5.697s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_navigation)
+[5.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/parking_navigation/package.ps1'
+[5.698s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/parking_navigation/package.dsv'
+[5.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/parking_navigation/package.sh'
+[5.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/parking_navigation/package.bash'
+[5.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/parking_navigation/package.zsh'
+[5.701s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/colcon-core/packages/parking_navigation)
+[5.831s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks' for CMake module files
+[5.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_tasks' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_tasks/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_tasks build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_tasks/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_tasks/install.log --single-version-externally-managed install_data
+[5.833s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks' for CMake config files
+[5.833s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/lib'
+[5.834s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/bin'
+[5.834s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/lib/pkgconfig/parking_tasks.pc'
+[5.834s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/lib/python3.12/site-packages'
+[5.834s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_tasks', 'pythonpath')
+[5.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/parking_tasks/hook/pythonpath.ps1'
+[5.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/parking_tasks/hook/pythonpath.dsv'
+[5.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/parking_tasks/hook/pythonpath.sh'
+[5.837s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/bin'
+[5.838s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_tasks)
+[5.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/parking_tasks/package.ps1'
+[5.839s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/parking_tasks/package.dsv'
+[5.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/parking_tasks/package.sh'
+[5.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/parking_tasks/package.bash'
+[5.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/parking_tasks/package.zsh'
+[5.843s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/colcon-core/packages/parking_tasks)
+[6.261s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils' for CMake module files
+[6.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_utils' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_utils build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/install.log --single-version-externally-managed install_data
+[6.263s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils' for CMake config files
+[6.264s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/lib'
+[6.265s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/bin'
+[6.265s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/lib/pkgconfig/parking_utils.pc'
+[6.265s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/lib/python3.12/site-packages'
+[6.266s] Level 1:colcon.colcon_core.shell:create_environment_hook('parking_utils', 'pythonpath')
+[6.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/share/parking_utils/hook/pythonpath.ps1'
+[6.267s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/share/parking_utils/hook/pythonpath.dsv'
+[6.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/share/parking_utils/hook/pythonpath.sh'
+[6.269s] Level 1:colcon.colcon_core.environment:checking '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/bin'
+[6.269s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parking_utils)
+[6.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/share/parking_utils/package.ps1'
+[6.271s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/share/parking_utils/package.dsv'
+[6.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/share/parking_utils/package.sh'
+[6.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/share/parking_utils/package.bash'
+[6.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/share/parking_utils/package.zsh'
+[6.274s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/share/colcon-core/packages/parking_utils)
+[6.274s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.275s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.275s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.275s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.304s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.304s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.304s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.326s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.327s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/local_setup.ps1'
+[6.328s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/apurv/Projects/Parking Bot Project/ros_ws/install/_local_setup_util_ps1.py'
+[6.330s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/setup.ps1'
+[6.333s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/local_setup.sh'
+[6.334s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/apurv/Projects/Parking Bot Project/ros_ws/install/_local_setup_util_sh.py'
+[6.335s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/setup.sh'
+[6.337s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/local_setup.bash'
+[6.338s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/setup.bash'
+[6.340s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/local_setup.zsh'
+[6.341s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/apurv/Projects/Parking Bot Project/ros_ws/install/setup.zsh'

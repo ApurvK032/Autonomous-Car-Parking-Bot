@@ -1,0 +1,21 @@
+[1.812s] Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control -- -j8 -l8
+[2.375s] Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control -- -j8 -l8
+[2.377s] Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control
+[2.446s] -- Install configuration: ""
+[2.446s] -- Execute custom install script
+[2.446s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/ament_index/resource_index/package_run_dependencies/parking_robot_control
+[2.447s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/ament_index/resource_index/parent_prefix_path/parking_robot_control
+[2.447s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/environment/ament_prefix_path.sh
+[2.448s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/environment/ament_prefix_path.dsv
+[2.449s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/environment/path.sh
+[2.449s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/environment/path.dsv
+[2.450s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/local_setup.bash
+[2.450s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/local_setup.sh
+[2.453s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/local_setup.zsh
+[2.453s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/local_setup.dsv
+[2.454s] -- Symlinking: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.dsv
+[2.511s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/ament_index/resource_index/packages/parking_robot_control
+[2.511s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/cmake/parking_robot_controlConfig.cmake
+[2.511s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/cmake/parking_robot_controlConfig-version.cmake
+[2.512s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.xml
+[2.605s] Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_robot_control

@@ -1,0 +1,1 @@
+/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_world/ament_cmake_environment_hooks/local_setup.bash

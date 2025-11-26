@@ -1,0 +1,20 @@
+running develop
+running egg_info
+creating parking_perception.egg-info
+writing parking_perception.egg-info/PKG-INFO
+writing dependency_links to parking_perception.egg-info/dependency_links.txt
+writing requirements to parking_perception.egg-info/requires.txt
+writing top-level names to parking_perception.egg-info/top_level.txt
+writing manifest file 'parking_perception.egg-info/SOURCES.txt'
+reading manifest file 'parking_perception.egg-info/SOURCES.txt'
+writing manifest file 'parking_perception.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/lib/python3.12/site-packages/parking-perception.egg-link (link to .)
+
+Installed /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception
+running symlink_data
+creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/ament_index
+creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/ament_index/resource_index
+creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/ament_index/resource_index/packages
+symbolically linking /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/resource/parking_perception -> /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/ament_index/resource_index/packages
+symbolically linking /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_perception/package.xml -> /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_perception/share/parking_perception

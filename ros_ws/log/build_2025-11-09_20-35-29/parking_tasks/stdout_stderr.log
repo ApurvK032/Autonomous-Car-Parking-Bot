@@ -1,0 +1,20 @@
+running develop
+running egg_info
+creating parking_tasks.egg-info
+writing parking_tasks.egg-info/PKG-INFO
+writing dependency_links to parking_tasks.egg-info/dependency_links.txt
+writing requirements to parking_tasks.egg-info/requires.txt
+writing top-level names to parking_tasks.egg-info/top_level.txt
+writing manifest file 'parking_tasks.egg-info/SOURCES.txt'
+reading manifest file 'parking_tasks.egg-info/SOURCES.txt'
+writing manifest file 'parking_tasks.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/lib/python3.12/site-packages/parking-tasks.egg-link (link to .)
+
+Installed /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_tasks
+running symlink_data
+creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/ament_index
+creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/ament_index/resource_index
+creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/ament_index/resource_index/packages
+symbolically linking /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_tasks/resource/parking_tasks -> /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/ament_index/resource_index/packages
+symbolically linking /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_tasks/package.xml -> /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_tasks/share/parking_tasks

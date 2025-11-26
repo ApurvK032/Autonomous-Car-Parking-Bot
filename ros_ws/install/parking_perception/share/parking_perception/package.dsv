@@ -1,0 +1,6 @@
+source;share/parking_perception/hook/pythonpath.ps1
+source;share/parking_perception/hook/pythonpath.dsv
+source;share/parking_perception/hook/pythonpath.sh
+source;share/parking_perception/hook/ament_prefix_path.ps1
+source;share/parking_perception/hook/ament_prefix_path.dsv
+source;share/parking_perception/hook/ament_prefix_path.sh

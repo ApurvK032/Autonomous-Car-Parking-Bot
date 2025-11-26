@@ -1,0 +1,15 @@
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/ament_index/resource_index/package_run_dependencies/parking_robot_control
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/ament_index/resource_index/parent_prefix_path/parking_robot_control
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/environment/ament_prefix_path.sh
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/environment/ament_prefix_path.dsv
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/environment/path.sh
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/environment/path.dsv
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/local_setup.bash
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/local_setup.sh
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/local_setup.zsh
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/local_setup.dsv
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.dsv
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/ament_index/resource_index/packages/parking_robot_control
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/cmake/parking_robot_controlConfig.cmake
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/cmake/parking_robot_controlConfig-version.cmake
+/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_robot_control/share/parking_robot_control/package.xml

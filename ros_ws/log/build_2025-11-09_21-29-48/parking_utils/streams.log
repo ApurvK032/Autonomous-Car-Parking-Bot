@@ -1,0 +1,19 @@
+[2.200s] Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_utils': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_utils build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/install.log --single-version-externally-managed install_data
+[2.827s] running egg_info
+[2.863s] writing ../../build/parking_utils/parking_utils.egg-info/PKG-INFO
+[2.864s] writing dependency_links to ../../build/parking_utils/parking_utils.egg-info/dependency_links.txt
+[2.864s] writing requirements to ../../build/parking_utils/parking_utils.egg-info/requires.txt
+[2.864s] writing top-level names to ../../build/parking_utils/parking_utils.egg-info/top_level.txt
+[2.943s] reading manifest file '../../build/parking_utils/parking_utils.egg-info/SOURCES.txt'
+[2.944s] writing manifest file '../../build/parking_utils/parking_utils.egg-info/SOURCES.txt'
+[2.944s] running build
+[2.944s] running build_py
+[2.945s] running install
+[2.956s] running install_lib
+[2.994s] running install_data
+[2.994s] running install_egg_info
+[3.031s] removing '/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/lib/python3.12/site-packages/parking_utils-0.0.0-py3.12.egg-info' (and everything under it)
+[3.031s] Copying ../../build/parking_utils/parking_utils.egg-info to /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/lib/python3.12/site-packages/parking_utils-0.0.0-py3.12.egg-info
+[3.032s] running install_scripts
+[3.274s] writing list of installed files to '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/install.log'
+[3.316s] Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_utils' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_utils/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_utils build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_utils/install.log --single-version-externally-managed install_data

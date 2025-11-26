@@ -1,0 +1,21 @@
+[1.804s] Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors -- -j8 -l8
+[2.363s] Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors -- -j8 -l8
+[2.375s] Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors
+[2.454s] -- Install configuration: ""
+[2.458s] -- Execute custom install script
+[2.461s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/ament_index/resource_index/package_run_dependencies/parking_sensors
+[2.463s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/ament_index/resource_index/parent_prefix_path/parking_sensors
+[2.466s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/environment/ament_prefix_path.sh
+[2.473s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/environment/ament_prefix_path.dsv
+[2.473s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/environment/path.sh
+[2.474s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/environment/path.dsv
+[2.482s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/local_setup.bash
+[2.486s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/local_setup.sh
+[2.486s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/local_setup.zsh
+[2.486s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/local_setup.dsv
+[2.491s] -- Symlinking: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/package.dsv
+[2.548s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/ament_index/resource_index/packages/parking_sensors
+[2.549s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/cmake/parking_sensorsConfig.cmake
+[2.549s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/cmake/parking_sensorsConfig-version.cmake
+[2.549s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_sensors/share/parking_sensors/package.xml
+[4.187s] Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_sensors

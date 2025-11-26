@@ -1,0 +1,226 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="parking_lot">
+    
+    <!-- Physics -->
+    <physics name="default_physics" type="dart">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>0.5</real_time_factor>
+    </physics>
+
+
+    <!-- Plugins (auto-loaded by Gazebo) -->
+    <plugin name="gz::sim::systems::Physics" filename="libPhysics.so"/>
+    <plugin name="gz::sim::systems::SceneManager" filename="libSceneManager.so"/>
+    <plugin name="gz::sim::systems::Sensors" filename="libSensors.so"/>
+
+    <!-- Gravity -->
+    <gravity>0 0 -9.81</gravity>
+
+    <!-- Lighting -->
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-- Ground Plane (Asphalt) -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>50 50</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>50 50</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Parking Slots (White Lines) -->
+    <!-- Slot S1 -->
+    <model name="slot_s1_line1">
+      <static>true</static>
+      <pose>10 5 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.5 0.1 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Slot S2 -->
+    <model name="slot_s2_line1">
+      <static>true</static>
+      <pose>15 5 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.5 0.1 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Slot S3 -->
+    <model name="slot_s3_line1">
+      <static>true</static>
+      <pose>20 5 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.5 0.1 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Slot S4 (opposite row) -->
+    <model name="slot_s4_line1">
+      <static>true</static>
+      <pose>10 -5 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.5 0.1 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Slot S5 -->
+    <model name="slot_s5_line1">
+      <static>true</static>
+      <pose>15 -5 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.5 0.1 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Slot S6 -->
+    <model name="slot_s6_line1">
+      <static>true</static>
+      <pose>20 -5 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2.5 0.1 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Origin Marker (Red sphere) -->
+    <model name="origin_marker">
+      <static>true</static>
+      <pose>0 0 0.1 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <sphere>
+              <radius>0.1</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+<!-- Overhead Lot Camera -->
+    <model name="lot_cam">
+      <static>true</static>
+      <!-- x y z roll pitch yaw -->
+      <!-- pitch -1.5708 (90°) to point camera DOWN -->
+      <pose>0 0 25 0 -1.5708 0</pose>
+      <link name="camera_link">
+        <sensor name="camera" type="camera">
+          <always_on>true</always_on>
+          <update_rate>10</update_rate>
+          <visualize>true</visualize>
+          <!-- Short topic name instead of auto-generated path -->
+          <topic>/lot_cam/image</topic>
+          <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>480</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+          </camera>
+        </sensor>
+      </link>
+    </model>
+
+  </world>
+</sdf>

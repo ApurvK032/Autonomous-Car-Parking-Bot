@@ -1,0 +1,23 @@
+[3.956s] Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup -- -j8 -l8
+[5.309s] Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup -- -j8 -l8
+[5.359s] Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup
+[5.430s] -- Install configuration: ""
+[5.435s] -- Execute custom install script
+[5.436s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/launch/lot_with_overhead.launch.py
+[5.440s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/launch/robot_with_sensors.launch.py
+[5.482s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/ament_index/resource_index/package_run_dependencies/parking_prd_bringup
+[5.482s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/ament_index/resource_index/parent_prefix_path/parking_prd_bringup
+[5.497s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/environment/ament_prefix_path.sh
+[5.497s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/environment/ament_prefix_path.dsv
+[5.528s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/environment/path.sh
+[5.541s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/environment/path.dsv
+[5.542s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/local_setup.bash
+[5.542s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/local_setup.sh
+[5.543s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/local_setup.zsh
+[5.546s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/local_setup.dsv
+[5.547s] -- Symlinking: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/package.dsv
+[5.585s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/ament_index/resource_index/packages/parking_prd_bringup
+[5.587s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/cmake/parking_prd_bringupConfig.cmake
+[5.592s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/cmake/parking_prd_bringupConfig-version.cmake
+[5.601s] -- Up-to-date symlink: /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_prd_bringup/share/parking_prd_bringup/package.xml
+[6.062s] Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/apurv/car_lift_robot_ws/install/car_lift_robot_perception:/home/apurv/car_lift_robot_ws/install/car_lift_robot_behaviors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_prd_bringup

@@ -1,0 +1,31 @@
+[3.853s] Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build
+[4.873s] running develop
+[5.510s] Removing /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages/parking-manipulation.egg-link (link to .)
+[5.565s] Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build
+[5.568s] Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_manipulation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_manipulation build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/install.log --single-version-externally-managed install_data --force
+[6.341s] running egg_info
+[6.407s] writing ../../build/parking_manipulation/parking_manipulation.egg-info/PKG-INFO
+[6.407s] writing dependency_links to ../../build/parking_manipulation/parking_manipulation.egg-info/dependency_links.txt
+[6.408s] writing requirements to ../../build/parking_manipulation/parking_manipulation.egg-info/requires.txt
+[6.408s] writing top-level names to ../../build/parking_manipulation/parking_manipulation.egg-info/top_level.txt
+[6.535s] reading manifest file '../../build/parking_manipulation/parking_manipulation.egg-info/SOURCES.txt'
+[6.537s] writing manifest file '../../build/parking_manipulation/parking_manipulation.egg-info/SOURCES.txt'
+[6.539s] running build
+[6.539s] running build_py
+[6.539s] creating /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build
+[6.540s] creating /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build/lib
+[6.540s] creating /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build/lib/parking_manipulation
+[6.540s] copying parking_manipulation/__init__.py -> /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build/lib/parking_manipulation
+[6.540s] running install
+[6.563s] running install_lib
+[6.635s] creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages/parking_manipulation
+[6.635s] copying /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build/lib/parking_manipulation/__init__.py -> /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages/parking_manipulation
+[6.637s] byte-compiling /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages/parking_manipulation/__init__.py to __init__.cpython-312.pyc
+[6.637s] running install_data
+[6.638s] copying resource/parking_manipulation -> /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/ament_index/resource_index/packages
+[6.638s] copying package.xml -> /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation
+[6.638s] running install_egg_info
+[6.717s] Copying ../../build/parking_manipulation/parking_manipulation.egg-info to /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages/parking_manipulation-0.0.0-py3.12.egg-info
+[6.719s] running install_scripts
+[7.031s] writing list of installed files to '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/install.log'
+[7.091s] Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/src/parking_manipulation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parking_manipulation build --build-base /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build install --record /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/install.log --single-version-externally-managed install_data --force

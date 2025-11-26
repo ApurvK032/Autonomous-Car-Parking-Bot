@@ -1,0 +1,22 @@
+[4.062s] Invoking command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build --no-deps symlink_data
+[5.060s] running develop
+[5.710s] running egg_info
+[5.710s] creating parking_manipulation.egg-info
+[5.772s] writing parking_manipulation.egg-info/PKG-INFO
+[5.773s] writing dependency_links to parking_manipulation.egg-info/dependency_links.txt
+[5.773s] writing requirements to parking_manipulation.egg-info/requires.txt
+[5.773s] writing top-level names to parking_manipulation.egg-info/top_level.txt
+[5.773s] writing manifest file 'parking_manipulation.egg-info/SOURCES.txt'
+[5.858s] reading manifest file 'parking_manipulation.egg-info/SOURCES.txt'
+[5.859s] writing manifest file 'parking_manipulation.egg-info/SOURCES.txt'
+[5.897s] running build_ext
+[5.897s] Creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages/parking-manipulation.egg-link (link to .)
+[5.898s] 
+[5.898s] Installed /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation
+[5.898s] running symlink_data
+[5.899s] creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/ament_index
+[5.899s] creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/ament_index/resource_index
+[5.899s] creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/ament_index/resource_index/packages
+[5.899s] symbolically linking /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/resource/parking_manipulation -> /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/ament_index/resource_index/packages
+[5.899s] symbolically linking /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/package.xml -> /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/share/parking_manipulation
+[5.950s] Invoked command in '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_manipulation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_manipulation/build --no-deps symlink_data

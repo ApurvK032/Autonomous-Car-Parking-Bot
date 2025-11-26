@@ -1,0 +1,27 @@
+running develop
+Removing /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/python3.12/site-packages/parking-navigation.egg-link (link to .)
+running egg_info
+writing ../../build/parking_navigation/parking_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/parking_navigation/parking_navigation.egg-info/dependency_links.txt
+writing requirements to ../../build/parking_navigation/parking_navigation.egg-info/requires.txt
+writing top-level names to ../../build/parking_navigation/parking_navigation.egg-info/top_level.txt
+reading manifest file '../../build/parking_navigation/parking_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/parking_navigation/parking_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/build
+creating /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/build/lib
+creating /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/build/lib/parking_navigation
+copying parking_navigation/__init__.py -> /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/build/lib/parking_navigation
+running install
+running install_lib
+creating /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/python3.12/site-packages/parking_navigation
+copying /home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/build/lib/parking_navigation/__init__.py -> /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/python3.12/site-packages/parking_navigation
+byte-compiling /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/python3.12/site-packages/parking_navigation/__init__.py to __init__.cpython-312.pyc
+running install_data
+copying resource/parking_navigation -> /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/ament_index/resource_index/packages
+copying package.xml -> /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/share/parking_navigation
+running install_egg_info
+Copying ../../build/parking_navigation/parking_navigation.egg-info to /home/apurv/Projects/Parking Bot Project/ros_ws/install/parking_navigation/lib/python3.12/site-packages/parking_navigation-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/apurv/Projects/Parking Bot Project/ros_ws/build/parking_navigation/install.log'
