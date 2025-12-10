@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot name="suv">
+  <link name="base_link">
+    <!-- Visual -->
+    <visual>
+      <origin xyz="0 0 0.85" rpy="0 0 0"/>
+      <geometry>
+        <box size="5.0 2.2 1.7"/>
+      </geometry>
+      <material name="red">
+        <color rgba="0.8 0.2 0.2 1.0"/>
+      </material>
+    </visual>
+    
+    <!-- Collision -->
+    <collision>
+      <origin xyz="0 0 0.85" rpy="0 0 0"/>
+      <geometry>
+        <box size="5.0 2.2 1.7"/>
+      </geometry>
+    </collision>
+    
+    <!-- Inertial -->
+    <inertial>
+      <origin xyz="0 0 0.85" rpy="0 0 0"/>
+      <mass value="1500"/>
+      <inertia ixx="120.0" ixy="0.0" ixz="0.0" 
+               iyy="120.0" iyz="0.0" izz="120.0"/>
+    </inertial>
+  </link>
+</robot>

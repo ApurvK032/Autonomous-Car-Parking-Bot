@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot name="small_car">
+  <link name="base_link">
+    <!-- Visual -->
+    <visual>
+      <origin xyz="0 0 0.7" rpy="0 0 0"/>
+      <geometry>
+        <box size="3.8 1.8 1.4"/>
+      </geometry>
+      <material name="yellow">
+        <color rgba="0.9 0.9 0.2 1.0"/>
+      </material>
+    </visual>
+    
+    <!-- Collision -->
+    <collision>
+      <origin xyz="0 0 0.7" rpy="0 0 0"/>
+      <geometry>
+        <box size="3.8 1.8 1.4"/>
+      </geometry>
+    </collision>
+    
+    <!-- Inertial -->
+    <inertial>
+      <origin xyz="0 0 0.7" rpy="0 0 0"/>
+      <mass value="1000"/>
+      <inertia ixx="80.0" ixy="0.0" ixz="0.0" 
+               iyy="80.0" iyz="0.0" izz="80.0"/>
+    </inertial>
+  </link>
+</robot>

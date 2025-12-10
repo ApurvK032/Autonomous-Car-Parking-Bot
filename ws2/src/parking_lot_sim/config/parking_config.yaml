@@ -1,0 +1,150 @@
+camera:
+  position:
+  - 0.0
+  - 0.0
+  - 35.0
+  fov: 1.2
+  resolution:
+  - 640
+  - 480
+  pixels_per_meter: 13.364077230428363
+spaces:
+  1:
+    center:
+    - 8.0
+    - -12.0
+    dimensions:
+    - 5.0
+    - 6.0
+    corners:
+    - - 10.5
+      - -15.0
+    - - 10.5
+      - -9.0
+    - - 5.5
+      - -9.0
+    - - 5.5
+      - -15.0
+    orientation: 0.0
+  2:
+    center:
+    - 8.0
+    - 0.0
+    dimensions:
+    - 5.0
+    - 6.0
+    corners:
+    - - 10.5
+      - -3.0
+    - - 10.5
+      - 3.0
+    - - 5.5
+      - 3.0
+    - - 5.5
+      - -3.0
+    orientation: 0.0
+  3:
+    center:
+    - 8.0
+    - 12.0
+    dimensions:
+    - 5.0
+    - 6.0
+    corners:
+    - - 10.5
+      - 9.0
+    - - 10.5
+      - 15.0
+    - - 5.5
+      - 15.0
+    - - 5.5
+      - 9.0
+    orientation: 0.0
+  4:
+    center:
+    - -8.0
+    - -12.0
+    dimensions:
+    - 5.0
+    - 6.0
+    corners:
+    - - -5.5
+      - -15.0
+    - - -5.5
+      - -9.0
+    - - -10.5
+      - -9.0
+    - - -10.5
+      - -15.0
+    orientation: 0.0
+  5:
+    center:
+    - -8.0
+    - 0.0
+    dimensions:
+    - 5.0
+    - 6.0
+    corners:
+    - - -5.5
+      - -3.0
+    - - -5.5
+      - 3.0
+    - - -10.5
+      - 3.0
+    - - -10.5
+      - -3.0
+    orientation: 0.0
+  6:
+    center:
+    - -8.0
+    - 12.0
+    dimensions:
+    - 5.0
+    - 6.0
+    corners:
+    - - -5.5
+      - 9.0
+    - - -5.5
+      - 15.0
+    - - -10.5
+      - 15.0
+    - - -10.5
+      - 9.0
+    orientation: 0.0
+cars:
+  blue_sedan_1:
+    position:
+    - -8.0
+    - -12.0
+    - 0.0
+    orientation: 0.0
+    dimensions:
+    - 4.5
+    - 2.0
+    - 1.5
+    color: blue
+    space_id: 4
+  yellow_suv_4:
+    position:
+    - -8.0
+    - 12.0
+    - 0.0
+    orientation: 0.0
+    dimensions:
+    - 5.0
+    - 2.2
+    - 1.7
+    color: yellow
+    space_id: 6
+  red_sedan_6_misparked:
+    position:
+    - 8.0
+    - 12.0
+    - 0.0
+    orientation: 0.4
+    dimensions:
+    - 4.5
+    - 2.0
+    - 1.5
+    color: red
+    space_id: 3
