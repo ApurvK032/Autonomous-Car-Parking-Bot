@@ -25,32 +25,23 @@ class CameraToMap(Node):
         
     def image_callback(self, msg):
         if not self.image_saved:
-            # Convert ROS Image to OpenCV
             cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
             
-            # Save raw image
             cv2.imwrite('/tmp/parking_lot_raw.png', cv_image)
             self.get_logger().info('Saved raw camera image to /tmp/parking_lot_raw.png')
             
-            # Convert to grayscale
             gray = cv2.cvtColor(cv_image, cv2.COLOR_BGR2GRAY)
             
-            # Create occupancy grid (simple thresholding)
-            # Dark areas (ground) = free space (255/white)
-            # Light areas (lines, cars) = occupied (0/black)
             _, binary = cv2.threshold(gray, 100, 255, cv2.THRESH_BINARY)
             
-            # Invert so occupied is black, free is white
             occupancy = 255 - binary
             
-            # Save occupancy grid
             cv2.imwrite('/tmp/parking_lot_map.pgm', occupancy)
             self.get_logger().info('Saved occupancy grid to /tmp/parking_lot_map.pgm')
             
-            # Display
             cv2.imshow('Raw Camera', cv_image)
             cv2.imshow('Occupancy Grid', occupancy)
-            cv2.waitKey(3000)  # Show for 3 seconds
+            cv2.waitKey(3000)
             
             self.image_saved = True
             self.get_logger().info('Map generation complete!')
@@ -60,7 +51,6 @@ def main(args=None):
     rclpy.init(args=args)
     node = CameraToMap()
     
-    # Spin once to capture image
     rclpy.spin_once(node, timeout_sec=5.0)
     
     node.destroy_node()

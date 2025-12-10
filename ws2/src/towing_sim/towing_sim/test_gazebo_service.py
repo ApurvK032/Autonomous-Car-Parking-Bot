@@ -14,7 +14,6 @@ class GapApproach(Node):
     def __init__(self):
         super().__init__('gap_approach')
         
-        # Subscribers
         self.car_position_sub = self.create_subscription(
             Pose2D,
             '/car_position',
@@ -35,13 +34,10 @@ class GapApproach(Node):
             10
         )
         
-        # Publisher for bot control
         self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
         
-        # Publisher for lift joint position
         self.lift_pub = self.create_publisher(Float64, '/lift_joint_position', 10)
         
-        # State variables
         self.car_detected = False
         self.car_x = 0.0
         self.car_y = 0.0
@@ -57,7 +53,6 @@ class GapApproach(Node):
         self.lift_height = 0.0
         self.car_lifted = False
         
-        # Timer for control loop
         self.control_timer = self.create_timer(0.1, self.control_loop)
         
         self.get_logger().info('🤖 Gap Approach Controller started!')
@@ -65,7 +60,6 @@ class GapApproach(Node):
     def car_position_callback(self, msg):
         """Receive car position from overhead camera"""
         self.car_detected = True
-        # Use exact car center as goal (no offset)
         self.car_x = msg.x
         self.car_y = msg.y
         self.car_angle = msg.theta
@@ -79,7 +73,6 @@ class GapApproach(Node):
         """Process lidar scan data"""
         self.lidar_ranges = msg.ranges
 
-        # Debug: log min distances in front sector
         front_ranges = list(msg.ranges[330:]) + list(msg.ranges[:30])
         valid_front = [r for r in front_ranges if r > 0.1]
         if valid_front:
@@ -94,17 +87,14 @@ class GapApproach(Node):
         self.bot_x = msg.pose.pose.position.x
         self.bot_y = msg.pose.pose.position.y
 
-        # Extract yaw from quaternion (no external library needed)
         orientation = msg.pose.pose.orientation
         
-        # Convert quaternion to yaw using math
         siny_cosp = 2 * (orientation.w * orientation.z + orientation.x * orientation.y)
         cosy_cosp = 1 - 2 * (orientation.y * orientation.y + orientation.z * orientation.z)
         self.bot_yaw = math.atan2(siny_cosp, cosy_cosp)
     
     def lift_car(self, target_height):
         """Lift the car by extending the lift joint"""
-        # Publish to lift joint position topic
         msg = Float64()
         msg.data = target_height
         self.lift_pub.publish(msg)
@@ -118,24 +108,13 @@ class GapApproach(Node):
         cmd = Twist()
         
         if self.state == "IDLE":
-            # Wait for car detection
             pass
             
         elif self.state == "NAVIGATE_TO_CAR":
-            """
-            SIMPLIFIED MANHATTAN NAVIGATION
-            - Move X first, then Y
-            - Speed: 2.0 m/s when far (>2m), 0.5 m/s when close (<2m)
-            - Stop only when within 0.05m of exact center
-            """
-            
             dx = self.car_x - self.bot_x
             dy = self.car_y - self.bot_y
             distance = math.sqrt(dx**2 + dy**2)
             
-            # ═══════════════════════════════════════════════════════
-            # DEBUG LOGGING - Always print position info
-            # ═══════════════════════════════════════════════════════
             self.get_logger().info(
                 f'\n'
                 f'═══════════════════════════════════════════════════════\n'
@@ -147,28 +126,20 @@ class GapApproach(Node):
                 throttle_duration_sec=0.3
             )
             
-            # Check obstacles (only for safety, not for alignment)
             front_ranges = list(self.lidar_ranges[345:]) + list(self.lidar_ranges[:15])
             min_front = min([r for r in front_ranges if 0.1 < r < 10.0], default=10.0)
             
-            # ═══════════════════════════════════════════════════════
-            # PHASE 1: X MOVEMENT (complete X first)
-            # ═══════════════════════════════════════════════════════
             if abs(dx) > 0.08:
                 cmd.linear.y = 0.0
                 cmd.angular.z = 0.0
                 
-                # Speed based on distance to destination
                 if distance > 2.0:
-                    # FAR: 2.0 m/s
                     speed = 2.0
                     status = "FAST"
                 else:
-                    # NEAR: 0.5 m/s
                     speed = 0.5
                     status = "SLOW"
                 
-                # Safety: stop if obstacle very close
                 if min_front < 0.4:
                     cmd.linear.x = 0.0
                     self.get_logger().warn(f'🛑 X BLOCKED: obstacle at {min_front:.2f}m')
@@ -178,24 +149,17 @@ class GapApproach(Node):
                         f'→ X PHASE [{status}]: moving at {speed:.1f}m/s, dx={dx:.4f}m remaining, dist={distance:.4f}m'
                     )
             
-            # ═══════════════════════════════════════════════════════
-            # PHASE 2: Y MOVEMENT (after X complete)
-            # ═══════════════════════════════════════════════════════
             elif abs(dy) > 0.08:
                 cmd.linear.x = 0.0
                 cmd.angular.z = 0.0
                 
-                # Speed based on distance to destination
                 if distance > 2.0:
-                    # FAR: 2.0 m/s
                     speed = 2.0
                     status = "FAST"
                 else:
-                    # NEAR: 0.5 m/s
                     speed = 0.5
                     status = "SLOW"
                 
-                # Check side obstacles
                 left_ranges = list(self.lidar_ranges[75:105])
                 right_ranges = list(self.lidar_ranges[255:285])
                 min_left = min([r for r in left_ranges if 0.1 < r < 10.0], default=10.0)
@@ -204,7 +168,6 @@ class GapApproach(Node):
                 moving_left = dy > 0
                 obstacle_side = min_left if moving_left else min_right
                 
-                # Safety: stop if obstacle very close
                 if obstacle_side < 0.4:
                     cmd.linear.y = 0.0
                     side_name = "left" if moving_left else "right"
@@ -215,9 +178,6 @@ class GapApproach(Node):
                         f'↔ Y PHASE [{status}]: moving at {speed:.1f}m/s, dy={dy:.4f}m remaining, dist={distance:.4f}m'
                     )
             
-            # ═══════════════════════════════════════════════════════
-            # SUCCESS CHECK: Both X and Y within threshold
-            # ═══════════════════════════════════════════════════════
             elif distance < 0.10:
                 self.get_logger().info(
                     f'\n'
@@ -238,9 +198,6 @@ class GapApproach(Node):
                 self.state = "ADVANCE_TO_TOWING"
                 self.get_logger().info('➡️  State: ADVANCE_TO_TOWING')
             
-            # ═══════════════════════════════════════════════════════
-            # STUCK STATE: Both within threshold but distance > 0.05
-            # ═══════════════════════════════════════════════════════
             else:
                 self.get_logger().error(
                     f'\n'
@@ -252,14 +209,12 @@ class GapApproach(Node):
                     f'This should not happen - possible oscillation or measurement issue\n'
                 )
                 
-                # Stop moving to avoid oscillation
                 cmd.linear.x = 0.0
                 cmd.linear.y = 0.0
                 cmd.angular.z = 0.0
         
         elif self.state == "ADVANCE_TO_TOWING":
-            """Advance forward to towing position"""
-            TOWING_DISTANCE = 0.75  # meters forward from center
+            TOWING_DISTANCE = 0.75
 
             dx = self.bot_x - getattr(self, 'towing_start_x', self.bot_x)
             dy = self.bot_y - getattr(self, 'towing_start_y', self.bot_y)
@@ -296,12 +251,11 @@ class GapApproach(Node):
                 self.get_logger().info('➡️  State: LIFTING')
         
         elif self.state == "LIFTING":
-            """Raise lift arm by publishing to joint topic"""
             cmd.linear.x = 0.0
             cmd.linear.y = 0.0
             cmd.angular.z = 0.0
             
-            TARGET_LIFT_HEIGHT = 0.35  # Extend lift 35cm
+            TARGET_LIFT_HEIGHT = 0.35
             
             if not hasattr(self, 'lift_started'):
                 self.get_logger().info('⬆️  Starting lift...')
@@ -309,11 +263,9 @@ class GapApproach(Node):
                 self.lift_car(TARGET_LIFT_HEIGHT)
                 self.lift_started = True
             
-            # Wait for lift to extend
             elapsed = (self.get_clock().now() - self.lift_start_time).nanoseconds / 1e9
             
             if elapsed < 3.0:
-                # Keep publishing lift command
                 self.lift_car(TARGET_LIFT_HEIGHT)
                 self.get_logger().info(
                     f'⬆️  Lifting... {elapsed:.1f}s / 3.0s',
@@ -325,7 +277,6 @@ class GapApproach(Node):
                 self.state = "READY_TO_TOW"
         
         elif self.state == "READY_TO_TOW":
-            """Lift is raised - car should be on top of lift arm"""
             cmd.linear.x = 0.0
             cmd.linear.y = 0.0
             cmd.angular.z = 0.0
@@ -339,12 +290,10 @@ class GapApproach(Node):
             )
         
         elif self.state == "DONE":
-            # Stop
             cmd.linear.x = 0.0
             cmd.linear.y = 0.0
             cmd.angular.z = 0.0
         
-        # Publish command
         self.cmd_pub.publish(cmd)
 
 def main(args=None):
@@ -356,7 +305,6 @@ def main(args=None):
     except KeyboardInterrupt:
         pass
     finally:
-        # Stop the bot
         cmd = Twist()
         node.cmd_pub.publish(cmd)
         node.destroy_node()

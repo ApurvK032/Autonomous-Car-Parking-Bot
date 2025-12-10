@@ -11,44 +11,37 @@ import math
 def generate_map():
     """Create 40m x 40m parking lot map"""
     
-    # Map parameters
-    MAP_SIZE_M = 40.0  # meters
-    RESOLUTION = 0.05  # meters per pixel
-    MAP_SIZE_PIX = int(MAP_SIZE_M / RESOLUTION)  # 800 pixels
+    MAP_SIZE_M = 40.0
+    RESOLUTION = 0.05
+    MAP_SIZE_PIX = int(MAP_SIZE_M / RESOLUTION)
     
-    # Create white image (all free space)
     map_array = np.ones((MAP_SIZE_PIX, MAP_SIZE_PIX), dtype=np.uint8) * 254
     
-    # Convert to PIL for drawing
     img = Image.fromarray(map_array)
     draw = ImageDraw.Draw(img)
     
-    # Function to convert world coords to pixel coords
     def world_to_pixel(x, y):
         """Convert world coordinates to pixel coordinates"""
         px = int((x + MAP_SIZE_M/2) / RESOLUTION)
-        py = int((MAP_SIZE_M/2 - y) / RESOLUTION)  # Y inverted in image
+        py = int((MAP_SIZE_M/2 - y) / RESOLUTION)
         return (px, py)
     
-    # Draw parking space boundaries (optional - just for visualization)
     spaces = [
-        (-12, 8), (0, 8), (12, 8),      # Top row
-        (-12, -8), (0, -8), (12, -8)    # Bottom row
+        (-12, 8), (0, 8), (12, 8),
+        (-12, -8), (0, -8), (12, -8)
     ]
     print(f"Parking space centers (world): {spaces}")
     
-    SPACE_WIDTH = 6.0  # meters
+    SPACE_WIDTH = 6.0
     SPACE_HEIGHT = 5.0
     
     for x, y in spaces:
-        # Draw space outline in gray (not obstacle, just marking)
         x1, y1 = world_to_pixel(x - SPACE_WIDTH/2, y - SPACE_HEIGHT/2)
         x2, y2 = world_to_pixel(x + SPACE_WIDTH/2, y + SPACE_HEIGHT/2)
         x_min, x_max = sorted([x1, x2])
         y_min, y_max = sorted([y1, y2])
         draw.rectangle([x_min, y_min, x_max, y_max], outline=200, width=2)
     
-    # Mark parked cars from config as obstacles (black)
     script_dir = os.path.dirname(os.path.abspath(__file__))
     config_path = os.path.join(script_dir, '..', 'config', 'parking_config.yaml')
     if os.path.exists(config_path):
@@ -58,8 +51,8 @@ def generate_map():
         print(f"Loaded parking_config.yaml contents:\n{config}\n")
         cars = config.get('cars', {})
 
-        CAR_LENGTH = 4.0  # meters
-        CAR_WIDTH = 2.0   # meters
+        CAR_LENGTH = 4.0
+        CAR_WIDTH = 2.0
         half_len = CAR_LENGTH / 2.0
         half_wid = CAR_WIDTH / 2.0
         local_corners = [
@@ -71,9 +64,8 @@ def generate_map():
 
         for car_name, car in cars.items():
             pos = car.get('position', [0, 0])
-            # Positions are lists [x, y, z]; swap X/Y because camera rotation swapped axes
-            car_x = pos[1]  # Y in config -> X in map
-            car_y = pos[0]  # X in config -> Y in map
+            car_x = pos[1]
+            car_y = pos[0]
 
             if 'orientation_deg' in car:
                 angle_rad = math.radians(car['orientation_deg'])
@@ -96,24 +88,17 @@ def generate_map():
             print(f"   pixel corners: {pixel_corners}")
             draw.polygon(pixel_corners, fill=0)
     
-    # Add boundary walls (5m thick)
-    WALL_THICKNESS_PIX = int(0.5 / RESOLUTION)  # 0.5m walls
+    WALL_THICKNESS_PIX = int(0.5 / RESOLUTION)
     
-    # Top wall
     draw.rectangle([0, 0, MAP_SIZE_PIX, WALL_THICKNESS_PIX], fill=0)
-    # Bottom wall
     draw.rectangle([0, MAP_SIZE_PIX-WALL_THICKNESS_PIX, MAP_SIZE_PIX, MAP_SIZE_PIX], fill=0)
-    # Left wall
     draw.rectangle([0, 0, WALL_THICKNESS_PIX, MAP_SIZE_PIX], fill=0)
-    # Right wall
     draw.rectangle([MAP_SIZE_PIX-WALL_THICKNESS_PIX, 0, MAP_SIZE_PIX, MAP_SIZE_PIX], fill=0)
     
-    # Use direct path instead of ament_index
     script_dir = os.path.dirname(os.path.abspath(__file__))
     map_dir = os.path.join(script_dir, '..', 'maps')
     fallback_dir = os.path.join(os.path.expanduser('~'), '.parking_lot_sim_maps')
     
-    # Create maps directory if it doesn't exist
     os.makedirs(map_dir, exist_ok=True)
     
     map_path = os.path.join(map_dir, 'parking_lot_nav_map.pgm')

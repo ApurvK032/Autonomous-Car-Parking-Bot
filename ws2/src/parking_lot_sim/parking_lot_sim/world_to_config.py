@@ -59,7 +59,6 @@ def extract_parking_spaces(root):
     spaces = {}
     space_pattern = re.compile(r'space_(\d+)_line_(front|back|left|right)')
     
-    # Group lines by space number
     space_lines = {}
     
     for model in root.findall('.//model'):
@@ -72,7 +71,6 @@ def extract_parking_spaces(root):
             if space_num not in space_lines:
                 space_lines[space_num] = {}
             
-            # Extract pose
             pose_elem = model.find('.//pose')
             if pose_elem is None:
                 raise ValueError(f"Space {space_num} line {line_type} missing <pose> element")
@@ -80,7 +78,6 @@ def extract_parking_spaces(root):
             pose = parse_pose(pose_elem.text)
             x, y = pose[0], pose[1]
             
-            # Extract size
             size_elem = model.find('.//size')
             if size_elem is None:
                 raise ValueError(f"Space {space_num} line {line_type} missing <size> element")
@@ -92,11 +89,9 @@ def extract_parking_spaces(root):
                 'size': size
             }
     
-    # Process each space to calculate center, dimensions, corners
     for space_num in sorted(space_lines.keys()):
         lines = space_lines[space_num]
         
-        # Validate we have all 4 lines
         required_lines = ['front', 'back', 'left', 'right']
         missing = [line for line in required_lines if line not in lines]
         if missing:
@@ -107,34 +102,29 @@ def extract_parking_spaces(root):
         left = lines['left']
         right = lines['right']
         
-        # Extract positions
         front_y = front['position'][1]
         back_y = back['position'][1]
         left_x = left['position'][0]
         right_x = right['position'][0]
         
-        # Calculate center - SWAP X and Y
         center_x = (front_y + back_y) / 2.0
         center_y = (left_x + right_x) / 2.0
         
-        # Calculate dimensions - SWAP width and height
         width = abs(front_y - back_y)
         height = abs(right_x - left_x)
         
-        # Calculate corners (top-left, top-right, bottom-right, bottom-left)
-        # SWAPPED coordinates to match camera view orientation
         corners = [
-            [front_y, left_x],   # top-left - SWAPPED
-            [front_y, right_x],   # top-right - SWAPPED
-            [back_y, right_x],   # bottom-right - SWAPPED
-            [back_y, left_x]     # bottom-left - SWAPPED
+            [front_y, left_x],
+            [front_y, right_x],
+            [back_y, right_x],
+            [back_y, left_x]
         ]
         
         spaces[space_num] = {
             'center': [float(center_x), float(center_y)],
             'dimensions': [float(width), float(height)],
             'corners': [[float(c[0]), float(c[1])] for c in corners],
-            'orientation': 0.0  # For now, assume horizontal spaces
+            'orientation': 0.0
         }
     
     return spaces
@@ -147,46 +137,38 @@ def extract_cars(root):
     for model in root.findall('.//model'):
         name = model.get('name', '')
         
-        # Check if name contains "sedan" or "suv"
         if 'sedan' not in name.lower() and 'suv' not in name.lower():
             continue
         
-        # Extract pose
         pose_elem = model.find('.//pose')
         if pose_elem is None:
             raise ValueError(f"Car '{name}' missing <pose> element")
         
         pose = parse_pose(pose_elem.text)
-        x, y, z = pose[1], pose[0], pose[2]  # SWAP X and Y
+        x, y, z = pose[1], pose[0], pose[2]
         yaw = pose[5] if len(pose) > 5 else 0.0
         
-        # Extract size from visual or collision
         size_elem = model.find('.//size')
         if size_elem is None:
             raise ValueError(f"Car '{name}' missing <size> element")
         
         size = parse_size(size_elem.text)
         
-        # Extract color from ambient material
         ambient_elem = model.find('.//ambient')
         color = "unknown"
         if ambient_elem is not None:
             color = parse_color(ambient_elem.text)
         
-        # Determine which space this car is in (if any)
         space_id = None
-        # This will be determined later by checking if car position is within space corners
         
         cars[name] = {
             'position': [float(x), float(y), float(z)],
             'orientation': float(yaw),
             'dimensions': [float(s) for s in size],
             'color': color,
-            'space_id': space_id  # Will be set later
+            'space_id': space_id
         }
     
-    # Assign space_id to cars based on position
-    # We need spaces for this, so we'll do it in the main function
     return cars
 
 
@@ -196,7 +178,6 @@ def extract_camera(root):
     if camera_model is None:
         raise ValueError("Camera model 'overhead_camera' not found")
     
-    # Extract pose
     pose_elem = camera_model.find('.//pose')
     if pose_elem is None:
         raise ValueError("Camera missing <pose> element")
@@ -204,14 +185,12 @@ def extract_camera(root):
     pose = parse_pose(pose_elem.text)
     position = [pose[0], pose[1], pose[2]]
     
-    # Extract FOV
     fov_elem = camera_model.find('.//horizontal_fov')
     if fov_elem is None:
         raise ValueError("Camera missing <horizontal_fov> element")
     
     fov = float(fov_elem.text)
     
-    # Extract resolution
     width_elem = camera_model.find('.//width')
     height_elem = camera_model.find('.//height')
     if width_elem is None or height_elem is None:
@@ -220,9 +199,6 @@ def extract_camera(root):
     width = int(width_elem.text)
     height = int(height_elem.text)
     
-    # Calculate pixels_per_meter
-    # FOV in radians, camera height is position[2]
-    # At height h, horizontal view width = 2 * h * tan(fov/2)
     camera_height = float(position[2])
     fov_float = float(fov)
     view_width_meters = 2.0 * camera_height * np.tan(fov_float / 2.0)
@@ -271,29 +247,24 @@ def assign_cars_to_spaces(cars, spaces):
 
 def parse_world_to_config(world_file, output_file):
     """Main function to parse world file and generate config"""
-    # Parse XML
     try:
         tree = ET.parse(world_file)
         root = tree.getroot()
     except ET.ParseError as e:
         raise ValueError(f"Failed to parse XML file: {e}")
     
-    # Extract information
     spaces = extract_parking_spaces(root)
     cars = extract_cars(root)
     camera = extract_camera(root)
     
-    # Assign cars to spaces
     assign_cars_to_spaces(cars, spaces)
     
-    # Create config dictionary
     config = {
         'camera': camera,
         'spaces': spaces,
         'cars': cars
     }
     
-    # Write YAML file
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, 'w') as f:
         yaml.dump(config, f, default_flow_style=False, sort_keys=False)
@@ -307,7 +278,6 @@ def parse_world_to_config(world_file, output_file):
 
 def main():
     """Main entry point"""
-    # Try multiple possible paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
     possible_world_paths = [
         os.path.join(script_dir, '..', '..', 'worlds', 'parking_lot.world'),
@@ -323,10 +293,8 @@ def main():
             break
     
     if world_file is None:
-        # Use first path as default and let it fail with a clear error
         world_file = os.path.abspath(possible_world_paths[0])
     
-    # Determine output file location
     if world_file:
         world_dir = os.path.dirname(world_file)
         config_dir = os.path.join(os.path.dirname(world_dir), 'config')

@@ -61,8 +61,6 @@ def draw_car_obstacles(draw, meta, cars):
     height = draw.im.size[1]
     for name, car in cars.items():
         pos = car.get('position', [0, 0])
-        # Positions stored as [x, y, z]; apply swap/negate if needed
-        # Use same swap as map_generator: X_world = pos[1], Y_world = pos[0]
         car_x = pos[1]
         car_y = pos[0]
 
@@ -101,7 +99,7 @@ def choose_misparked_car(cars):
 def compute_goal(car_data, approach_distance=3.5):
     """Compute goal 3.5m behind the car."""
     pos = car_data.get('position', [0, 0])
-    car_x = pos[1]  # swapped axes
+    car_x = pos[1]
     car_y = pos[0]
 
     if 'orientation_deg' in car_data:
@@ -121,7 +119,6 @@ def visualize():
     draw = ImageDraw.Draw(img)
     height = img.size[1]
 
-    # Load parking config
     script_dir = os.path.dirname(os.path.abspath(__file__))
     config_path = os.path.join(script_dir, '..', 'config', 'parking_config.yaml')
     if not os.path.exists(config_path):
@@ -130,38 +127,30 @@ def visualize():
         config = yaml.safe_load(f) or {}
     cars = config.get('cars', {})
 
-    # Draw car obstacles
     draw_car_obstacles(draw, meta, cars)
 
-    # Choose misparked car
     car_name, car_data = choose_misparked_car(cars)
     if not car_data:
         raise RuntimeError("No car found in parking_config.yaml to visualize")
 
-    # Compute goal
     car_pos, goal_pos, _ = compute_goal(car_data, approach_distance=3.5)
 
-    # Start position (home)
     start_world = (-15.0, -15.0)
 
-    # Convert to pixels
     start_px = world_to_pixel(start_world[0], start_world[1], meta, height)
     car_px = world_to_pixel(car_pos[0], car_pos[1], meta, height)
     goal_px = world_to_pixel(goal_pos[0], goal_pos[1], meta, height)
 
-    # Draw markers
     def draw_circle(center, radius, color):
         x, y = center
         draw.ellipse([x - radius, y - radius, x + radius, y + radius], fill=color, outline=color)
 
-    draw_circle(start_px, 6, (0, 255, 0))   # Green start
-    draw_circle(car_px, 6, (255, 0, 0))     # Red car
-    draw_circle(goal_px, 6, (0, 0, 255))    # Blue goal
+    draw_circle(start_px, 6, (0, 255, 0))
+    draw_circle(car_px, 6, (255, 0, 0))
+    draw_circle(goal_px, 6, (0, 0, 255))
 
-    # Draw straight line path
     draw.line([start_px, goal_px], fill=(0, 0, 255), width=2)
 
-    # Save visualization
     maps_dir = os.path.join(script_dir, '..', 'maps')
     os.makedirs(maps_dir, exist_ok=True)
     out_path = os.path.join(maps_dir, 'path_visualization.png')
